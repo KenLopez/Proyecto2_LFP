@@ -1,11 +1,12 @@
+from ModuloGramatica import ModuloGramatica
 class Menu:
     def __init__(self):
         self.archivo = 0
         self.modulo = 0
-        self.moduloG = 0
+        self.moduloG = ModuloGramatica()
 
     def mostrarTitulo(self):
-        print("----------PROYECTO 2-----------\n\n")
+        print("----------SPARK STACK-----------\n\n")
         print("Lenguajes Formales y de Programación")
         print("Sección: B")
         print("Nombre: Kenneth Haroldo López López")
@@ -23,6 +24,7 @@ class Menu:
             opcion = input("Elige una opción: ")
             if opcion == "1":
                 print("\n\n")
+                self.moduloG.menuGramatica()
                 pass
             elif opcion == "2":
                 print("\n\n")

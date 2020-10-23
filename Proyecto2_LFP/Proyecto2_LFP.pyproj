@@ -22,13 +22,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="FileHandler.py" />
+    <Compile Include="GramaticaLC.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Menu.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ModuloGramatica.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Produccion.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Proyecto2_LFP.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="automatas.ap" />
+    <Content Include="gramaticas.glc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
